@@ -10,7 +10,7 @@
 <body>
     <h1>Triangle Quiz</h1>
     <div class="container">
-        <form action="">
+        <form class="quiz-form">
             <div class="question-container">
                 <p>What is the third angle for the triangle where angle1 = 45 and angle = 45 ?</p>
                 <label><input type="radio" name="question1" value="90" />90</label>
@@ -23,8 +23,12 @@
                 <label for=""><input type="radio" name="question2" value="Obtuse" />Obtuse</label>
                 <label for=""><input type="radio" name="question2" value="Right Angled" />Right Angled</label>
             </div>
+            <button id="submit-answer-btn">Submit Answers</button>
         </form>
     </div>
+
+    <div id="output"></div>
+
 
     <script src="quiz.js"></script>
 </body>
