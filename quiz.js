@@ -4,7 +4,8 @@ const outputScore = document.querySelector('#output');
 
 const correctAnswer = [90, "Right Angled"];
 
-function calculateScore() {
+function calculateScore(event) {
+    event.preventDefault();
     let score = 0;
     let i = 0;
     const formResults = new FormData(quizFormValue);
