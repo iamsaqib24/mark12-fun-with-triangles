@@ -7,6 +7,13 @@ function calculateArea() {
     // console.log("clicked");
     // console.log(baseInput.value);
     // console.log(heightInput.value);
+
+    const baseOfTriangle = Number(baseInput.value);
+    const heightOfTriangle = Number(heightInput.value);
+
+    const area = (baseOfTriangle * heightOfTriangle) / 2;
+
+    outputArea.innerText = "Area of triangle is : " + area;
 }
 
 submitButton.addEventListener('click', calculateArea);
